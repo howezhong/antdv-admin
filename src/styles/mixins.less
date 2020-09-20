@@ -1,0 +1,14 @@
+.flex (@flex: flex, @ai: center, @ji: center) {
+  display: @flex;
+  align-items: @ai;
+  justify-content: @ji;
+}
+.transition (@property: all, @duration: 0.3s, @ease: ease, @delay: 0s) {
+  transition: @property @duration @ease @delay;
+}
+.wrap() {
+  text-wrap: wrap;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

@@ -1,0 +1,19 @@
+// 清除浮动
+.clearfix {
+  zoom: 1;
+  &::before,
+  &::after {
+    display: table;
+    content: "";
+  }
+  &::after {
+    clear: both;
+  }
+}
+// 文字无法选中
+.unselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
